@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wether</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-image: url(img/blue-sky.jpg);background-repeat: no-repeat;background-size: cover;background-position: center;">
+    
+    <header class="py-5  ">
+       <div class="container">
+           <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group mx-auto" style="left: 55%;">
+                  <input id="inputfield" type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button id="searchbtn" class="btn btn-default" type="button">Search</button>
+                  </span>
+                </div>
+                <span id="emtytext"style="position: relative; left:55%;margin:20px"></span>
+            </div>
+           </div>
+       </div>
+    </header>
+
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row" id="row">
+                <div class="card mx-auto" style="width: 18rem;background:none;">
+                    <img id="image" src="http://openweathermap.org/img/wn/10d@2x.png" class="card-img-top w-50 h-50" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">City Name : <span id="cityname">--</span></h5>
+                      <h5 class="card-title">Contry Name : <span id="contryname">--</span></h5>
+                      <p class="card-text"><span id="tempers">32.0 </span> °С</p>
+                      <h6 id="clouds">Cloud</h6>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
